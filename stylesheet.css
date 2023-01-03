@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#headerDiv {
+    height: 150px;
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#nameHeader {
+    margin-left: 100px;
+}
+
+#headerBackgroundDiv {
+    width: 1500px;
+    height: 90px;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+img {
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+.headerLink {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-size: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#bodyDiv {
+    border: 1px solid red;
+    width: 1500px;
+    height: 1000px;
+}
