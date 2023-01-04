@@ -6,7 +6,7 @@ body {
 
 #headerDiv {
     height: 150px;
-    width: 1500px;
+    width: 1300px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -21,7 +21,7 @@ body {
 }
 
 #headerBackgroundDiv {
-    width: 1500px;
+    width: 1300px;
     height: 90px;
     display:flex;
     justify-content: space-around;
@@ -37,7 +37,7 @@ img {
 }
 
 .headerLink {
-    width: 200px;
+    width: 170px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ a {
 #bodyDiv {
     border: 3px solid rgb(255, 180, 228);
     background-color: rgb(246, 231, 241);
-    width: 1494px;
+    width: 1294px;
     height: 1100px;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ a {
     background-color: rgb(246, 198, 228);
     box-shadow: 0 0 1em rgb(252, 95, 195);
     border-radius: 10px;
-    width: 1300px;
+    width: 1200px;
     height: 900px;
     margin: 30px;
     display: flex;
@@ -167,7 +167,7 @@ a {
 
 
 #footerDiv {
-    width: 1500px;
+    width: 1300px;
     height: 120px;
     background-color: rgb(255, 0, 162);
     border-bottom-left-radius: 10px;
