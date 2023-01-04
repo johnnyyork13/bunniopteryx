@@ -15,6 +15,9 @@ body {
 
 #nameHeader {
     margin-left: 0px;
+    background: linear-gradient(to right, #ff01a6, #d4038b, #43a047, #7e57c2, #2196f3, #26c6da, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #headerBackgroundDiv {
@@ -44,6 +47,11 @@ img {
     border-radius: 8px;
     margin-bottom: 15px;
     background-color:rgb(255, 180, 228);
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .headerLink:hover, .navButton:hover {
@@ -87,7 +95,7 @@ img {
 
 #artLeftDiv {
     width: 800px;
-    height: 800px;   
+    height: 700px;   
 }
 
 #artDiv {
@@ -102,7 +110,19 @@ img {
     border-radius: 10px;
 }
 
-#art{
+.art {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    max-width: 600px;
+    max-height: 600px;
+    box-shadow: 0 0 5em rgb(190, 56, 141);
+}
+
+#art1{
+    box-shadow: 0 0 1em rgb(252, 95, 195);
+    visibility: visible;
+    opacity: 1;
     max-width: 800px;
     max-height: 600px;
 }
