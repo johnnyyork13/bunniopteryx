@@ -5,8 +5,8 @@ body {
 }
 
 #headerDiv {
-    height: 150px;
-    width: 1300px;
+    height: 20vh;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -21,8 +21,8 @@ body {
 }
 
 #headerBackgroundDiv {
-    width: 1300px;
-    height: 90px;
+    width: 70vw;
+    height: 8vh;
     display:flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -37,8 +37,8 @@ img {
 }
 
 .headerLink {
-    width: 170px;
-    height: 40px;
+    width: 11vw;
+    height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,8 +61,8 @@ a {
 #bodyDiv {
     border: 3px solid rgb(255, 180, 228);
     background-color: rgb(246, 231, 241);
-    width: 1294px;
-    height: 1100px;
+    width: 69.75vw;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,8 +72,8 @@ a {
     background-color: rgb(255, 214, 240);
     box-shadow: 0 0 1em rgb(252, 95, 195);
     border-radius: 10px;
-    width: 900px;
-    height: 100px;
+    width: 50vw;
+    height: 10vh;
     margin: 30px;
     display: flex;
     justify-content: center;
@@ -85,8 +85,8 @@ a {
     background-color: rgb(246, 198, 228);
     box-shadow: 0 0 1em rgb(252, 95, 195);
     border-radius: 10px;
-    width: 1200px;
-    height: 900px;
+    width: 60vw;
+    height: 100vh;
     margin: 30px;
     display: flex;
     justify-content: space-around;
@@ -94,7 +94,7 @@ a {
 }
 
 #artLeftDiv {
-    width: 800px;
+    width: 50vw;
     height: 700px;   
 }
 
@@ -102,8 +102,8 @@ a {
     background-color: rgb(249, 214, 236);
     box-shadow: 0 0 1em rgb(252, 95, 195);
     margin: 20px;
-    width: 800px;
-    height: 700px;
+    width: 40vw;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,8 +114,8 @@ a {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.5s linear;
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 70vw;
+    max-height: 70vh;
     box-shadow: 0 0 5em rgb(190, 56, 141);
 }
 
@@ -123,8 +123,8 @@ a {
     box-shadow: 0 0 1em rgb(252, 95, 195);
     visibility: visible;
     opacity: 1;
-    max-width: 800px;
-    max-height: 600px;
+    max-width: 70vw;
+    max-height: 70vh;
 }
 
 #artNav {
@@ -132,16 +132,16 @@ a {
     box-shadow: 0 0 1em rgb(252, 95, 195);
     border-radius: 10px;
     margin: 20px;
-    width: 800px;
-    height: 100px;
+    width: 40vw;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .navButton {
-    width: 150px;
-    height: 50px;
+    width: 7vw;
+    height: 5vh;
     margin: 10px;
     font-size: 1.5em;
     background-color:rgb(255, 0, 162);
@@ -155,8 +155,8 @@ a {
     background-color: rgb(249, 214, 236);
     box-shadow: 0 0 1em rgb(252, 95, 195);
     border-radius: 10px;
-    height: 815px;
-    width: 300px;
+    height: 89.5vh;
+    width: 17vw;
     margin: 25px;
 }
 
@@ -167,8 +167,8 @@ a {
 
 
 #footerDiv {
-    width: 1300px;
-    height: 120px;
+    width: 70vw;
+    height: 12vh;
     background-color: rgb(255, 0, 162);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
