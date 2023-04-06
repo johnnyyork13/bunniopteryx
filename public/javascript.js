@@ -1,54 +1,41 @@
-const leftBtn = document.getElementById('artLeft');
-const viewBtn = document.getElementById('artView');
-const rightBtn = document.getElementById('artRight');
-const btnList = document.getElementsByClassName('navButton');
+const overlay = document.getElementById('overlay');
+const artImg = document.getElementsByClassName('artImg');
+const imageContainer = document.getElementById('imageContainer');
+const imageContainerSrc = document.getElementById('imageContainerSrc');
 
-const artArray = document.getElementsByClassName('art');
-
-let numSlide = 1;
-let left = false;
-let right = false;
-
-leftBtn.addEventListener('click', function(){
-    left = true;
-
-    changeSlide();
-})
-
-rightBtn.addEventListener('click', function(){
-    left = false;
-
-    changeSlide();
-})
-
-function changeSlide()
-{
-    console.log(left, numSlide);
-    if (left && numSlide > 1)  {
-        console.log('one')
-        numSlide -= 1;
-    } else if (left && numSlide == 1) {
-        console.log('two')
-        numSlide = 8;
-    } else if (!left && numSlide < 8) {
-        console.log('three')
-        numSlide += 1;
-    } else if (!left && numSlide == 8) {
-        console.log('four')
-        numSlide = 1;
+function addArtListener() {
+    for (let i = 0; i < artImg.length; i++) {
+        let e = artImg[i];
+        e.addEventListener('click', function(){
+            addOverlay();
+            changeImage(imageContainer, e.src);
+        })
     }
+    imageContainerSrc.addEventListener('click', function(){
+        changeImage(imageContainer);
+        addOverlay();
+    })
+}
 
-    for (i = 0; i < artArray.length; i++) {
-        let e = artArray[i];
-        if (e.id === `art${numSlide}`)
-        {
-            console.log(e.id, numSlide);
-            e.style.visibility = 'visible';
-            e.style.opacity = '1';
-        } else {
-            e.style.visibility = 'hidden';
-            e.style.opacity = '0';
-        }
+overlay.style.visibility = 'hidden';
+function addOverlay() {
+    if (overlay.style.visibility === 'hidden') {
+        overlay.style.visibility = 'visible';
+    } else {
+        overlay.style.visibility = 'hidden';
     }
 }
 
+let imageCheck = false;
+function changeImage(container, src) {
+    if (!imageCheck) {
+        imageCheck = true;
+        container.style.visibility = 'visible';
+        imageContainerSrc.src = src;
+    } else {
+        imageCheck = false;
+        container.style.visibility = 'hidden';
+    }
+}
+
+addArtListener();
